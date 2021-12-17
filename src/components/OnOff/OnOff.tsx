@@ -18,7 +18,7 @@ export function OnOff(props: PropsType) {
         cursor: 'pointer',
         backgroundColor: on ? 'green' : 'white'
     }
-    const ofStyle = {
+    const offStyle = {
         width: '30px',
         height: '20px',
         border: '1px solid black',
@@ -39,18 +39,16 @@ export function OnOff(props: PropsType) {
     }
 
 
-    const OnButtonClick = () => {
-        setOn(true)
-    }
+    const OnButtonClick = () => setOn(true)
 
-    const OffButtonClick = () => {
-        setOn(false)
-    }
+
+    const OffButtonClick = () => setOn(false)
+
 
     return (
         <div>
             <div onClick={OnButtonClick} style={onStyle}>On</div>
-            <div onClick={OffButtonClick} style={ofStyle}>Off</div>
+            <div onClick={OffButtonClick} style={offStyle}>Off</div>
             <div style={indicatorStyle}></div>
         </div>
     )
