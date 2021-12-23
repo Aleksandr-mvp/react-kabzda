@@ -2,3 +2,8 @@
     width: 600px;
     margin: 20px auto;
 }
+
+.starButton {
+    padding: 5px;
+    cursor: pointer;
+}

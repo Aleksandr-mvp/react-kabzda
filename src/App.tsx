@@ -13,10 +13,11 @@ function App() {
             <OnOff />
 
             <UncontrolledAccordion titleValue={'Menu'} />
-            <Accordion titleValue={'Menu'} collapsed={false} />
 
             <UncontrolledRating />
-            <Rating value={3} />
+
+            {/*<Accordion titleValue={'Menu'} collapsed={false} />*/}
+            {/*<Rating value={3} />*/}
 
             {/*<Rating value={0}/>*/}
             {/*<Rating value={1}/>*/}
