@@ -49,7 +49,7 @@ export function OnOff(props: PropsType) {
         <div>
             <div onClick={OnButtonClick} style={onStyle}>On</div>
             <div onClick={OffButtonClick} style={offStyle}>Off</div>
-            <div style={indicatorStyle}></div>
+            <div style={indicatorStyle}/>
         </div>
     )
 }

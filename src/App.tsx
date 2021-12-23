@@ -9,15 +9,14 @@ import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRa
 
 function App() {
     return (
-        <div>
-            <OnOff />
-            <OnOff />
+        <div className={'App'}>
             <OnOff />
 
             <UncontrolledAccordion titleValue={'Menu'} />
-            <UncontrolledAccordion titleValue={'My List'} />
+            <Accordion titleValue={'Menu'} collapsed={false} />
 
             <UncontrolledRating />
+            <Rating value={3} />
 
             {/*<Rating value={0}/>*/}
             {/*<Rating value={1}/>*/}
