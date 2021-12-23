@@ -7,3 +7,15 @@
     padding: 5px;
     cursor: pointer;
 }
+
+.starButton:hover {
+    color: #fc8700;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: #fc8700;
+}
