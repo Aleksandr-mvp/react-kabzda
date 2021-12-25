@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 type PropsType = {
-    //on: boolean
+    onChange: (on: boolean) => void
 }
 
 export function UncontrolledOnOff(props: PropsType) {
@@ -39,10 +39,15 @@ export function UncontrolledOnOff(props: PropsType) {
     }
 
 
-    const OnButtonClick = () => setOn(true)
+    const OnButtonClick = () => {
+        setOn(true)
+        props.onChange(true)
+    }
 
-
-    const OffButtonClick = () => setOn(false)
+    const OffButtonClick = () => {
+        setOn(false)
+        props.onChange(false)
+    }
 
 
     return (
