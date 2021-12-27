@@ -39,21 +39,20 @@ export function UncontrolledOnOff(props: PropsType) {
     }
 
 
-    const OnButtonClick = () => {
-        setOn(true)
-        props.onChange(true)
+    const ButtonHandler = () => {
+        if (on) {
+            setOn(false)
+            props.onChange(false)
+        } else {
+            setOn(true)
+            props.onChange(true)
+        }
     }
-
-    const OffButtonClick = () => {
-        setOn(false)
-        props.onChange(false)
-    }
-
 
     return (
         <div>
-            <div onClick={OnButtonClick} style={onStyle}>On</div>
-            <div onClick={OffButtonClick} style={offStyle}>Off</div>
+            <div onClick={ButtonHandler} style={onStyle}>On</div>
+            <div onClick={ButtonHandler} style={offStyle}>Off</div>
             <div style={indicatorStyle}/>
         </div>
     )
